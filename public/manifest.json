@@ -4,19 +4,19 @@
   "description": "Simple standings tracker for Hearthstone Battlegrounds",
   "version": "1.0",
   "icons": {
-    "16": "/images/icons/logo128.png",
-    "32": "/images/icons/logo128.png",
-    "48": "/images/icons/logo128.png",
-    "128": "/images/icons/logo128.png"
+    "16": "/images/logo128.png",
+    "32": "/images/logo128.png",
+    "48": "/images/logo128.png",
+    "128": "/images/logo128.png"
   },
   "action": {
     "default_popup": "index.html",
     "default_title": "Bring it on!",
     "default_icon": {
-      "16": "/images/icons/logo128.png",
-      "32": "/images/icons/logo128.png",
-      "48": "/images/icons/logo128.png",
-      "128": "/images/icons/logo128.png"
+      "16": "/images/logo128.png",
+      "32": "/images/logo128.png",
+      "48": "/images/logo128.png",
+      "128": "/images/logo128.png"
     }
   },
   "permissions": ["storage", "activeTab"]
