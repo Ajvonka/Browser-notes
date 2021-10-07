@@ -1,5 +1,5 @@
-const Note = ({style}) => {
-    return <div className={style}>Note</div>;
+const Note = () => {
+    return <div className="note">Note</div>
   }
   
   export default Note;
