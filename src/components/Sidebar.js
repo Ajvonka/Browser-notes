@@ -15,7 +15,7 @@ const Sidebar = ({style}) => {
       </div>
       <div className="icon-container">
         <div className="icon-plus">
-          <IconName.BiListPlus  style={{ color: "#009999", fontSize: "2.5em" }}/>
+          <IconName.BiListPlus  style={{ color: "#113f67", fontSize: "2em"}}/>
         </div>
       </div>
       </div>

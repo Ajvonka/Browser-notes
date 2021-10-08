@@ -1,4 +1,3 @@
-import Note from "./components/Note";
 import NoteBody from "./components/NoteBody";
 import Sidebar from "./components/Sidebar";
 

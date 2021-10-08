@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     font-family: "Ubuntu", "Helvetica Neue";
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border: 2px solid rgba(155, 181, 184, 0.75);
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -82,8 +82,7 @@
     display: flex;
     width: 68px;
     height: 68px;
-    background: #ddecf1;
-    border: 2px solid #82afbe;
+    background: #e2e9ee;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
