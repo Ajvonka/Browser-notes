@@ -1,12 +1,38 @@
-const NoteBody = ({style}) => {
-    return <div className={style}>
+import React, { useState, useEffect } from "react";
+import Typography from "@material-ui/core/Typography";
+import TextField from "@material-ui/core/TextField";
+
+const NoteBody = ({content, currentNote, setCurrentNoteBody}) => {
+  const noteContent = content.filter(item => item.id == currentNote)[0].body;
+  console.log("CurrentNote: ", currentNote);
+  console.log("Content: ", content);
+
+  const [note, setNote] = useState(noteContent);
+  const [isNoteFocused, setIsNoteFocused] = useState(true);
+
+  console.log("note: ", note);
+
+  const handleChange = (event) => {
+    setNote(event.target.value);
+  }
+
+    return <div className="note-body-container">
       <div className="note-body">
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-      Richard McClintock, 
-      a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, 
-      from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
-      Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
-      written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
+      {!isNoteFocused ? (
+        <Typography
+          onClick={() => {
+            setIsNoteFocused(true);
+          }}
+        >
+        </Typography>
+      ) : (
+        <TextField
+          autoFocus
+          value={noteContent}
+          onChange={handleChange}
+          multiline={true}
+        />
+      )}
       </div>
       </div>
   }
